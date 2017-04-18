@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="账号*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="31dp"
+        android:layout_y="76dp"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_x="93dp"
+        android:layout_y="122dp"
+        android:id="@+id/editText4" />
+
+    <TextView
+        android:text="密码*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="31dp"
+        android:layout_y="136dp"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="再次输入*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="193dp"
+        android:id="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_x="93dp"
+        android:layout_y="182dp"
+        android:id="@+id/editText5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_x="92dp"
+        android:layout_y="60dp"
+        android:id="@+id/editText3" />
+
+    <TextView
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_x="236dp"
+        android:layout_y="224dp"
+        android:id="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_x="92dp"
+        android:layout_y="247dp"
+        android:id="@+id/editText6" />
+
+    <TextView
+        android:text="姓名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="263dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:text="电话*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="322dp"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_x="48dp"
+        android:layout_y="463dp"
+        android:id="@+id/textView10" />
+
+    <Button
+        android:text="确认注册"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_x="137dp"
+        android:layout_y="431dp"
+        android:background="@color/white"
+        android:id="@+id/button4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_x="94dp"
+        android:layout_y="364dp"
+        android:id="@+id/editText8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_x="92dp"
+        android:layout_y="305dp"
+        android:id="@+id/editText7" />
+
+    <TextView
+        android:text="年龄"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="34dp"
+        android:layout_y="379dp"
+        android:id="@+id/textView11" />
+
+</AbsoluteLayout>
