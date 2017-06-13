@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3E54">
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/laonianbaoicon" />
+
+    <TextView
+        android:id="@+id/login_text_laonianbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="老&#160;年&#160;宝"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_text_laonianbao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="用户名"
+        android:inputType="textPersonName"
+        android:textColor="#777"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_edit_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:textColor="#777"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/login_bt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/login_edit_password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorwhile"
+        android:text="用户注册"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_bt_forpssword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_edit_password"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorwhile"
+        android:text="忘记密码"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_bt_shuxian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorwhile"
+        android:text="|"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_bt_shuxian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/button_yuanjiao"
+        android:text="登     录"
+        android:textColor="#2C3E54"
+
+        android:textSize="20sp" />
+
+
+    <ImageButton
+        android:id="@+id/login_imag_account"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/login_edit_account"
+        android:layout_alignRight="@+id/login_edit_account"
+        android:layout_alignTop="@+id/login_edit_account"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorwhile"
+        app:srcCompat="@android:drawable/presence_audio_away" />
+
+    <ImageButton
+        android:id="@+id/login_imag_password"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/login_edit_password"
+        android:layout_alignRight="@+id/login_edit_password"
+        android:layout_alignTop="@+id/login_edit_password"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorwhile"
+        app:srcCompat="@android:drawable/presence_audio_away" />
+
+
+</RelativeLayout>

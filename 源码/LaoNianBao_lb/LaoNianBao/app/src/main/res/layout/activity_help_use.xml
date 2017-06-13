@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_13">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用帮助"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="         此款老年宝APP专为老年人设计，为老人提供了简化的界面，老人可以在无任何辅助的情况下自行使用，产品包括十多个关怀老人的功能，并提供子女端的服务，便于老人子女进行联系，精心设计的功能让老人的生活更加丰富...
+
+       "
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:foregroundGravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="         产品会定期更新，会提供更多丰富多彩的老人关怀功能，更多详情请关注老年宝官网（www.laonianbao.com）"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ^_^ "
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"/>
+
+
+</LinearLayout>

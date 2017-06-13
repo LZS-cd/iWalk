@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.boge.laonianbao">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许程序打开网络socket -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 外存储写权限， 构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 外存储读权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 配置权限，用来记录应用配置信息 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 手机定位信息，用来为语义等功能提供定位， 提供更精准的服务 -->
+    <!-- 定位信息是敏感信息， 可通过Setting.setLocationEnable(false)关闭定位请求 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 如需使用人脸识别，还要添加：摄相头权限， 拍照需要用到 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 计歩 -->
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许程序开机自动运行 监听启动成功事件 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许程序挂载、反挂载外部文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 【必须】 信鸽SDK所需权限   -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【常用】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <!-- 三轴加速度感应器 -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <!-- 检测一步发一个事件 数字和步数的时间戳 -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <!-- 检测一步累计 发总步数 -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <application
+        android:name=".global.KDXFinit"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- 注册科大讯飞 -->
+        <activity
+            android:name=".login.Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register.Register" />
+        <activity android:name=".retrieve.Retrieve_password" />
+        <activity android:name=".weather.SearchWeather" />
+        <activity android:name=".retrieve.Change_password" />
+        <activity android:name=".Train.TrainTimes" />
+        <activity android:name=".Train.TicketInfo" />
+        <activity android:name=".Music.MusicActivity" />
+        <activity android:name=".Music.MusicwebviewActivity" />
+        <!-- 步数 -->
+        <activity android:name=".step.activity.StepActivity" />
+        <activity android:name=".step.activity.SetPlanActivity" />
+        <activity android:name=".step.activity.HistoryActivity" />
+
+        <!-- 健康 -->
+        <activity android:name=".HealthTips.HealthTipsActivity" />
+        <activity android:name=".HealthTips.HealthWebViewActivity" />
+
+        <service
+            android:name=".step.step.service.StepService"
+            android:priority="1000"
+            android:process="cn.bluemobi.dylan.step.service.StepService">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".step.pedometer.StepsDetectService"
+            android:priority="1000"
+            android:process="cn.bluemobi.dylan.step.pedometer.StepsDetectService">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="62600cdefb5b08f0bdc6b07d" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ZDBEv0WjECRmUMG0GDSmlqrn4rTYT1CX" />
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100259782" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A364GKTTP36P" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity android:name=".news.NewsActivity" />
+        <activity android:name=".news.NewsWebviewActivity" />
+        <activity android:name=".help.HelpUse" />
+        <activity android:name=".wheelview.set.Setting" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".map.map" />
+
+        <!-- 推送                -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v3">
+            <intent-filter android:priority="0x7fffffff">
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
+        <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver
+            android:name="com.example.boge.laonianbao.Receiver.MessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理-->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false">
+            <intent-filter>
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action"-->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushServiceV3"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v3" />
+        <!-- 【必须】 提高service的存活率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+                <!-- 【必须】 请修改为当前APP包名 .PUSH_ACTION, 如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.example.boge.laonianbao.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+        <!-- 【必须】 【注意】authorities修改为 包名.AUTH_XGPUSH, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:authorities="com.example.boge.laonianbao.AUTH_XGPUSH"
+            android:exported="true" />
+        <!-- 【必须】 【注意】authorities修改为 包名.TPUSH_PROVIDER, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:authorities="com.example.boge.laonianbao.TPUSH_PROVIDER"
+            android:exported="false" />
+        <!-- 【必须】 【注意】authorities修改为 包名.TENCENT.MID.V3, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.example.boge.laonianbao.TENCENT.MID.V3"
+            android:exported="true" />
+        <service android:name=".Receiver.LocationReceiver"></service>
+
+    </application>
+
+</manifest>

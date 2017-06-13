@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3E54">
+
+    <ImageView
+        android:id="@+id/register_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/laonianbaoicon" />
+
+    <TextView
+        android:id="@+id/register_text_laonianbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="注&#160;册"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/regis_edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_text_laonianbao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="请输入账号*"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/isaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regis_edit_password"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/regis_edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/regis_edit_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="请输入密码*"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/ispassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regis_edit_repassword"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/regis_edit_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/regis_edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="确认密码*"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/regis_text_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regis_edit_name"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/regis_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regis_edit_repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="输入姓名*"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/regis_edit_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regis_edit_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="输入你的电话*"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/regis_edit_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regis_edit_tel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="输入你的年龄*"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/regis_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regis_edit_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_yuanjiao"
+        android:gravity="center"
+        android:text="确认注册"
+        android:textColor="#2C3E54"
+        android:textSize="20sp" />
+
+</RelativeLayout>
