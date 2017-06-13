@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPureWhile"
+    tools:context="com.example.boge.child.addParent.AddParent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:weightSum="1"
+        android:background="@color/colorPureWhile">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/search"
+            android:id="@+id/imageView2"
+            android:layout_weight="0.06" />
+
+        <EditText
+            android:layout_width="252dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="@drawable/edit_bottom"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textCursorDrawable="@drawable/cursor"/>
+
+        <Button
+            android:text="搜   寻"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:background="@color/colorWhile"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textSize="20sp"
+        android:id="@+id/textView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_weight="0.31">
+
+    </RelativeLayout>
+
+</LinearLayout>

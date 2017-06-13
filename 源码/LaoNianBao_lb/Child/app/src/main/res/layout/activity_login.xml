@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_back"
+    tools:context="com.example.boge.child.login.Login">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_account"
+        android:background="@drawable/edit_style"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/edit_password"
+        android:layout_alignLeft="@+id/edit_password"
+        android:layout_alignStart="@+id/edit_password"
+        android:layout_x="69dp"
+        android:layout_y="222dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorLittleBlack"
+        android:hint="             输入账号"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_password"
+        android:background="@drawable/edit_style"
+        android:layout_marginBottom="197dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="69dp"
+        android:layout_y="138dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorLittleBlack"
+        android:hint="              输入密码" />
+
+    <Button
+        android:text="忘记密码"
+        android:layout_width="77dp"
+        android:layout_height="22dp"
+        android:id="@+id/bt_forget"
+        android:layout_marginTop="57dp"
+        android:layout_x="85dp"
+        android:layout_y="295dp"
+        android:background="@color/colorWhile"
+        android:layout_below="@+id/edit_account"
+        android:layout_alignRight="@+id/edit_password"
+        android:layout_alignEnd="@+id/edit_password" />
+
+    <Button
+        android:text="用户注册"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_x="215dp"
+        android:layout_y="312dp"
+        android:id="@+id/bt_register"
+        android:background="@color/colorWhile"
+        android:layout_alignTop="@+id/bt_forget"
+        android:layout_alignLeft="@+id/edit_password"
+        android:layout_alignStart="@+id/edit_password" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/colorPureWhile"
+        android:layout_x="193dp"
+        android:layout_y="296dp"
+        android:layout_alignBottom="@+id/bt_forget"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="登    录"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/bt_submit"
+        android:background="@drawable/button_style"
+        android:layout_below="@+id/bt_forget"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
